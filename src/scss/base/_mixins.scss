@@ -1,0 +1,22 @@
+@mixin mqTelefono () {
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+
+@mixin mqTablet () {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mqPC () {
+    @media (min-width: $PC) {
+        @content;
+    }
+}
+
+@mixin grid ($columnas) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+}

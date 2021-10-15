@@ -1,0 +1,34 @@
+.video {
+    position: relative;
+    max-height: 50rem;
+    overflow: hidden;
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        display: block;
+        width: 100%;
+    }
+}
+
+.contenido-video {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $blanco;
+        font-size: 7rem;
+        span {
+            padding: 1rem 2rem;
+            font-size: 3rem;
+            background-color: $rojo;
+        }
+    }
+}

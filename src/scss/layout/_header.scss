@@ -1,0 +1,42 @@
+.header {
+    background-color: $verde;
+    .contenido-header {
+        padding: $separacion / 2 0;
+        @include mqTelefono {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ;
+    }
+    h1 {
+        color: $blanco;
+        text-align: center;
+    }
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem #444;
+    }
+}
+
+.navegacion-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+    @include mqTelefono {
+        margin-top: 0;
+    }
+    a {
+        text-align: center;
+        color: $blanco;
+        font-size: 2.2rem;
+        transition: color 2s;
+        transition: font-size 1s;
+        &:hover {
+            color: $amarillo;
+            font-size: 2.3rem;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.sobre-festival {
+    padding: $separacion;
+    margin-top: 3rem;
+    @include mqTablet {
+        @include grid(2);
+        column-gap: 2rem;
+    }
+}
+
+.contenido-festival {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    @include mqTablet {
+        margin-top: 0;
+    }
+    //padding: 2rem 1rem;
+    h2 {
+        font-weight: $bold;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .fecha {
+        color: $rojo;
+        font-size: 2rem;
+    }
+    .texto {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
